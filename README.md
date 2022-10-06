@@ -11,4 +11,4 @@ We love lunch, but it's not easy to find the right restaurant each day. A simple
 * Include instructions on how to run your project in this README
 * Spend approximately 4-6 hours on this project
 
-When you're done, ideally within a week of you seeing this, send us a pull request with your work in it to this repository!
+When you're done, ideally within a week of you seeing this, send us a pull request with your work in it to this repository! Bonus points if your commits are descriptive. =)
