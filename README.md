@@ -1,8 +1,8 @@
 # Restaurant Decider
  
 ## Estimation
-* 4h to get basic functionality working
-* 10h for fully fledged functionality
+* 3h to get basic functionality working
+* 7h for fully fledged functionality
 
 ## How to run
 1. Clone / download .zip
