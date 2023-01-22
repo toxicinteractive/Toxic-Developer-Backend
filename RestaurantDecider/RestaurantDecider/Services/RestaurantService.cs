@@ -42,17 +42,3 @@ namespace RestaurantDecider.Services
         }
     }
 }
-
-
-
-
-
-
-
-        //if (_restaurants.Count == 0)
-        //{
-        //    Console.WriteLine("No restaurants to pick from!");
-        //    return null;
-        //}
-
-       
