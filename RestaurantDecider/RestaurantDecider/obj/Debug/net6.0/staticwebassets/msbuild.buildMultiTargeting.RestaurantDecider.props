@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/RestaurantDecider.props" />
+</Project>
