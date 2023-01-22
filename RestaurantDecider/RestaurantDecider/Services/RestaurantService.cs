@@ -7,6 +7,9 @@ namespace RestaurantDecider.Services
 {
     public sealed class RestaurantService : IRestaurantService
     {
+
+        private static Random _random = new Random();
+
         public IFakeDataStore _db;
 
         public RestaurantService(IFakeDataStore db)
@@ -24,10 +27,32 @@ namespace RestaurantDecider.Services
             return _db.GetAll();
         }
 
-    //    public Restaurant PickRandom()
-    //    {
-    //        List<Restaurant> restaurants = Get();
-    //    }
-    //}
+        public Restaurant PickRandom()
+        {
+            List<Restaurant> restaurants =
+                _db.GetAll()
+                .OrderBy(x => x.TimesPicked)
+                .ToList();
+
+            int restaurantIndex = _random.Next(0, (restaurants.Count() / 2));
+            Restaurant pickedRestaurant = restaurants.ElementAt(restaurantIndex);
+            _db.UpdatePicked(pickedRestaurant);
+
+            return pickedRestaurant;
+        }
+    }
 }
 
+
+
+
+
+
+
+        //if (_restaurants.Count == 0)
+        //{
+        //    Console.WriteLine("No restaurants to pick from!");
+        //    return null;
+        //}
+
+       

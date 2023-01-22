@@ -23,8 +23,7 @@ public class HomeController : Controller
 
     public IActionResult Restaurant()
     {
-        List<Restaurant> restaurants = _restaurantService.Get().ToList();
-        return View(restaurants.FirstOrDefault());
+        return View(_restaurantService.PickRandom());
     }
 
     public IActionResult Add([FromForm] Restaurant restaurant)

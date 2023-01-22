@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IFakeDataStore, FakeDataStore>();
+builder.Services.AddSingleton<IFakeDataStore, FakeDataStore>();
 builder.Services.AddTransient<IRestaurantService, RestaurantService>();
 
 var app = builder.Build();

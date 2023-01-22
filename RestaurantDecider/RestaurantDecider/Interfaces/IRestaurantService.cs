@@ -7,6 +7,7 @@ namespace RestaurantDecider.Interfaces
     {
 		public void Add(Restaurant restaurant);
 		public List<Restaurant> Get();
+		public Restaurant PickRandom();
     }
 }
 
