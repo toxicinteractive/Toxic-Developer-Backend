@@ -1,0 +1,100 @@
+﻿@model AnalyzerResult;
+@using System.Globalization
+
+<head>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        mark {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+@{
+        bool showAnalyzedResults = Model.Running;
+        List<string> plagiatedText = new List<string>();
+
+        //if (Model.PlagiarismResult == null)
+        //{
+        //    plagiatedText = "No Plagiarism detected.";
+
+        //}
+        //else
+        //{
+        plagiatedText = Model.PlagiarismResult;
+        //plagiatedText = string.Join(". ", Model.PlagiarismResult);
+    
+}
+
+
+<form method="post" asp-controller="Home" asp-action="Index">
+    <h2>
+        Let's check for that plagiarism.
+    </h2>
+
+    <input name="filename" type="text" class="form-control" placeholder="Text File Name" />
+    <br />
+    <ol>
+        <li>
+            <p class="text-secondary">
+                Copy Boost Content text without formatting in a .txt file.
+            </p>
+        </li>
+        <li>
+            <p class="text-secondary">
+                Put the .txt file in the same Documents/Boost Content/ folder as all the other .txt files.
+            </p>
+        </li>
+        <li>
+            <p class="text-secondary">
+                Give it the name "text_number" with number being 1 more than the last
+            </p>
+        </li>
+        <li>
+            <p class="text-secondary">
+                Increment the variable with file count in FileReader by 1
+            </p>
+        </li>
+    </ol>
+
+    <button type="submit" class="btn btn-primary">Check now</button>
+</form>
+
+<br />
+<br />
+
+@if (showAnalyzedResults)
+{
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-7">
+                <h3>Inputted text</h3>
+                <p style="color:red;">Works only for complete sentences ending with . (dot).</p>
+
+                <p id="text">
+                    @Model.SourceText
+                </p>
+            </div>
+
+            <div class="col-5">
+                <h3>Plagiated Text</h3>
+                <p>
+                    @foreach (var item in plagiatedText)
+                    {
+                        if (!string.IsNullOrEmpty(item))
+                        {
+                            <p>@(item + ".")
+                                <br />
+                            </p>
+                        }
+                      }
+            </div>
+
+        </div>
+    </div>
+}
