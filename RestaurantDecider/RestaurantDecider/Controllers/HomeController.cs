@@ -27,6 +27,12 @@ public class HomeController : Controller
         return View(restaurants.FirstOrDefault());
     }
 
+    public IActionResult Add([FromForm] Restaurant restaurant)
+    {
+        _restaurantService.Add(restaurant);
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

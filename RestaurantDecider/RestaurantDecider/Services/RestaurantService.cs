@@ -16,13 +16,18 @@ namespace RestaurantDecider.Services
 
         public void Add(Restaurant restaurant)
         {
-            throw new NotImplementedException();
+            _db.Add(restaurant);
         }
 
         public List<Restaurant> Get()
         {
             return _db.GetAll();
         }
-    }
+
+    //    public Restaurant PickRandom()
+    //    {
+    //        List<Restaurant> restaurants = Get();
+    //    }
+    //}
 }
 
