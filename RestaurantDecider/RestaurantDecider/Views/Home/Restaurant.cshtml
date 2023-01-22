@@ -1,9 +1,10 @@
-﻿@{
+﻿@model Restaurant
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome all!!s</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-
+<h1>@Model.Name</h1>
+<h1>@Model.Food</h1>
+<h1>@Model.Address</h1>
+<h1>@Model.OpenHour.ToString()</h1>
+<h1>@Model.CloseHour.ToString()</h1>

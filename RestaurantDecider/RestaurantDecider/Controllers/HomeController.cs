@@ -1,16 +1,19 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using RestaurantDecider.Interfaces;
 using RestaurantDecider.Models;
+using RestaurantDecider.Services;
 
 namespace RestaurantDecider.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    IRestaurantService _restaurantService;
+
+    public HomeController(IRestaurantService restaurantService)
     {
-        _logger = logger;
+        _restaurantService = restaurantService;
     }
 
     public IActionResult Index()
@@ -18,9 +21,10 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Restaurant()
     {
-        return View();
+        List<Restaurant> restaurants = _restaurantService.Get().ToList();
+        return View(restaurants.FirstOrDefault());
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,7 +1,13 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using RestaurantDecider.Interfaces;
+using RestaurantDecider.Persistence;
+using RestaurantDecider.Services;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IFakeDataStore, FakeDataStore>();
+builder.Services.AddTransient<IRestaurantService, RestaurantService>();
 
 var app = builder.Build();
 

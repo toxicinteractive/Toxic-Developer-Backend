@@ -1,29 +1,31 @@
 ﻿<Properties StartupConfiguration="{7EDCEED2-3DEE-487A-B4BB-271430BBD85E}|Default">
+  <MonoDevelop.Ide.ItemProperties.RestaurantDecider PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.RestaurantDecider PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RestaurantDecider/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RestaurantDecider/Controllers/RestaurantController.cs">
     <Files>
-      <File FileName="RestaurantDecider/Views/Home/Index.cshtml" Line="10" Column="1" />
+      <File FileName="RestaurantDecider/Controllers/RestaurantController.cs" Line="12" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestaurantDecider" expanded="True">
             <Node name="RestaurantDecider" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Persistence" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
