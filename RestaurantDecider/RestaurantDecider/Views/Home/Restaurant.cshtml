@@ -4,8 +4,7 @@
 }
 
 <h1>@Model.Name</h1>
+<p class="text-info">@Model.Address</p>
 
 <p class="lead">Food served: <strong>@Model.Food</strong></p>
-<p class="lead">Location: <strong>@Model.Address</strong></p>
-<p class="lead">Opens at: <strong>@Model.OpenHour.ToString("HH:mm")</strong></p>
-<p class="lead">Closes at: <strong>@Model.CloseHour.ToString("HH:mm")</strong></p>
+<p class="lead">Open between <strong>@Model.OpenHour.ToString("HH:mm") - @Model.CloseHour.ToString("HH:mm")</strong></p>

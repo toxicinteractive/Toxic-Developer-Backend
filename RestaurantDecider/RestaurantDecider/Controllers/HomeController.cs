@@ -29,7 +29,7 @@ public class HomeController : Controller
     public IActionResult Add([FromForm] Restaurant restaurant)
     {
         _restaurantService.Add(restaurant);
-        return View();
+        return View("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
