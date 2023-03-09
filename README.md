@@ -1,15 +1,20 @@
-# Pre-interview assignment
+# Find_Restaurant
+Summary for Find-Restaurant .
+The goal is this application for user to find /select restaurants easily
+I have build this  Project with  ASP.NET Core Version 7 .
+Used the Entity Framework Model from database (database first approach for entity)
+The Project can run on Visual studio  with SQL Server .
+I have implemented so far following functions:
+•	Be able to create New Restaurants with necessary information and save the data in database .
+•	Able to see the restaurant list with Name, Opening hours, Dish type and next page able see more details.
+•	Search Restaurant’s by Category (Swedish , Italian etc)
+•	Also, able to search by writing any text 
+•	Be able to Edit Restaurant Information 
+
+For Further Development :
+•	Could be Add User(Admin/ visitors)  login functionality by using  .NET Core Identity
+•	Search functions could be extended;  search by location / search by Price criteria / search by Opening hours 
+•	Adding Picture for the Dishes 
+•	Adding Responsive Design and Content Management  to make user friendly
 
 
-## System description
-We love lunch, but it's not easy to find the right restaurant each day. A simple tool would be nice to help us select which restaurant to visit. It should be able to add new restaurants with information such as what food they serve (chinese, swedish, pizza etc.), where the restaurant is located, and it's opening hours. A randomising function can be used to select "the restaurant of the day", but make sure we don't get the same one too often!
-
-## Instructions
-* Fork this repository
-* Make an estimate on how long you think it would take to complete this project and add it to the README
-* Use .NET 6 for your system
-* Include instructions on how to run your project in this README
-* Spend approximately 4-6 hours on this project
-* When you're done, write a little bit about what your next steps would be if you had more time
-
-When you're done, ideally within a week of you seeing this, send us a pull request with your work in it to this repository! Bonus points if your commits are descriptive. =)

@@ -1,0 +1,18 @@
+﻿
+
+
+@model List<Find_Restaurant.Models.Restaurant>
+
+
+@foreach (var newRestaurant in Model)
+{
+
+    <h3> @newRestaurant.Name</h3>
+    
+    <p> @newRestaurant.DishType.DishName</p>
+
+    <p> @newRestaurant.OpeningHours</p>
+
+    <p> @newRestaurant.City</p>
+
+}

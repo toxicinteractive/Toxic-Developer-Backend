@@ -1,0 +1,101 @@
+﻿
+@model Find_Restaurant.ViewModels.RestaurantsViewModel
+
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="card" id="welcome">
+    <h1>Welcome to Find Restaurant !! </h1>
+    <br />
+    <h3> Create New Restaurant</h3>
+</div>
+<br />
+
+
+<form asp-controller="Restaurant" asp-action="CreateRestaurant" method="post" id="create">
+
+    <div class="row">
+        <p>Create New Restaurant  :</p>
+
+        <label asp-for="DishCategoryList"></label>
+        <select asp-for="@Model.restaurantInfo.DishTypeId">
+            @foreach (var cat in Model.DishCategoryList)
+            {
+                <option value="@cat.DishTypeId">@cat.DishName</option>
+            }
+
+        </select>
+    </div>
+    <br />
+    <br /> <br /> <br />
+    <label asp-for="@Model.restaurantInfo.Name"></label>
+    <br />
+    <input asp-for="@Model.restaurantInfo.Name" maxlength="50" />
+    <span asp-validation-for="@Model.restaurantInfo.Name"></span>
+
+    <br />
+
+    <label asp-for="@Model.restaurantInfo.DescriptionOfRestaurant"></label>
+
+    <br />
+    <input asp-for="@Model.restaurantInfo.DescriptionOfRestaurant" maxlength="500" />
+    <span asp-validation-for="@Model.restaurantInfo.DescriptionOfRestaurant" class="text-danger"></span>
+    <br />
+
+
+    <label asp-for="@Model.restaurantInfo.OpeningHours"></label>
+
+    <br />
+    <input asp-for="@Model.restaurantInfo.OpeningHours" />
+    <span asp-validation-for="@Model.restaurantInfo.OpeningHours" class="text-danger"></span>
+    <br />
+
+    <label asp-for="@Model.restaurantInfo.Country"></label>
+
+    <br />
+    <input asp-for="@Model.restaurantInfo.Country" maxlength="30" />
+    <span asp-validation-for="@Model.restaurantInfo.Country" class="text-danger"></span>
+
+    <br />
+
+    <label asp-for="@Model.restaurantInfo.City"></label>
+    <input asp-for="@Model.restaurantInfo.City" maxlength="100" />
+    <span asp-validation-for="@Model.restaurantInfo.City" class="text-danger"></span>
+    <br />
+
+
+    <label asp-for="@Model.restaurantInfo.ContactEmail"></label>
+    <br />
+    <input asp-for="@Model.restaurantInfo.ContactEmail" maxlength="40" />
+    <span asp-validation-for="@Model.restaurantInfo.ContactEmail" class="text-danger"></span>
+    <br /><br />
+
+    <label asp-for="@Model.restaurantInfo.ContactNumber"></label>
+    <br />
+    <input asp-for="@Model.restaurantInfo.ContactNumber" maxlength="20" />
+    <span asp-validation-for="@Model.restaurantInfo.ContactNumber" class="text-danger"></span>
+    <br /><br />
+
+    <label asp-for="@Model.restaurantInfo.Street"></label>
+    <br />
+    <input asp-for="@Model.restaurantInfo.Street" maxlength="20" />
+    <span asp-validation-for="@Model.restaurantInfo.Street" class="text-danger"></span>
+    <br /><br />
+
+    <label asp-for="@Model.restaurantInfo.PostalCode"></label>
+    <br />
+    <input asp-for="@Model.restaurantInfo.PostalCode" maxlength="20" />
+    <span asp-validation-for="@Model.restaurantInfo.PostalCode" class="text-danger"></span>
+    <br /><br />
+
+    <br /><br />
+    <input type="submit" value="Register" />
+
+    <br /><br /> <br />
+
+</form>
+
+<br />
+<br />
+
+
+
