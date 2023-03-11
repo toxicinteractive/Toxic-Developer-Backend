@@ -6,6 +6,7 @@ Used the Entity Framework Model from database (database first approach for entit
 The Project can run on Visual studio  with SQL Server .
 I have implemented so far following functions:
 •	Be able to create New Restaurants with necessary information and save the data in database .
+• Display Restaurant List Randomly every time user open the application or Click for Search
 •	Able to see the restaurant list with Name, Opening hours, Dish type and next page able see more details.
 •	Search Restaurant’s by Category (Swedish , Italian etc)
 •	Also, able to search by writing any text 
