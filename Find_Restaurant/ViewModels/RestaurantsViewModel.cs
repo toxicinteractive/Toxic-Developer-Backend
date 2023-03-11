@@ -9,7 +9,7 @@ namespace Find_Restaurant.ViewModels
         public Restaurant restaurantInfo { get; set; }
         public List<CategoryDish> DishCategoryList { get; set; }
 
-        public CategoryDish DishCategoryInfo { get; set; }
+        //public CategoryDish DishCategoryInfo { get; set; }
         public string SearchValue { get; set; }
 
         public RestaurantsViewModel()
