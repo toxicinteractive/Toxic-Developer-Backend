@@ -15,16 +15,14 @@ namespace Find_Restaurant.Controllers
         }
 
         // Search Restaurants :
-
+        // Display Restaurant List Randomly or by Category
         [HttpGet]
         public IActionResult ViewRestaurantList()
         {
             RestaurantsViewModel model = new RestaurantsViewModel();
-
+            var random = new Random();
             model.DishCategoryList = _dbContext.CategoryDishes.ToList();
-
-            model.RestaurantList = _dbContext.Restaurants.OrderByDescending(n => n.CreationDate).ToList();
-
+            model.RestaurantList = _dbContext.Restaurants.ToList().OrderBy(k => random.Next()).Take(10).ToList();
             return View(model);
         }
 
@@ -101,12 +99,13 @@ namespace Find_Restaurant.Controllers
         }
 
 
-        //Show list
+        //Show Restaurant list Randomly
         [HttpGet]
         public IActionResult RestaurantListShow()
         {
             RestaurantsViewModel model = new RestaurantsViewModel();
-            model.RestaurantList = _dbContext.Restaurants.ToList();
+            var random = new Random();
+            model.RestaurantList = _dbContext.Restaurants.ToList().OrderBy(k=> random.Next()).Take(10).ToList();
             return View(model);
         }
 
