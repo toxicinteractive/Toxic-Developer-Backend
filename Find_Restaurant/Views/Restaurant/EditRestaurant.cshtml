@@ -1,0 +1,42 @@
+﻿@model Find_Restaurant.ViewModels.RestaurantsViewModel
+
+<h3>  Update Restaurant Information:</h3>
+
+
+<div class="row justify-content-center">
+
+    <form asp-controller="Restaurant" asp-action="EditRestaurant">
+
+        <label>Name</label>
+        <p><input asp-for="@Model.restaurantInfo.Name" /></p>
+
+        <label>DescriptionOfRestaurant</label>
+        <p> <input asp-for="@Model.restaurantInfo.DescriptionOfRestaurant"></p>
+
+        <label>OpeningHours</label>
+        <p><input asp-for="@Model.restaurantInfo.OpeningHours" /></p>
+
+        <label>ContactEmail</label>
+        <p><input asp-for="@Model.restaurantInfo.ContactEmail" /></p>
+
+        <label>ContactNumber</label>
+        <p><input asp-for="@Model.restaurantInfo.ContactNumber" /></p>
+
+        <label>Country</label>
+        <p><input asp-for="@Model.restaurantInfo.Country" /></p>
+
+        <label>City</label>
+        <p><input asp-for="@Model.restaurantInfo.City" /></p>
+
+        <label>Street</label>
+        <p><input asp-for="@Model.restaurantInfo.Street" /></p>
+
+        <label>PostalCode</label>
+        <p><input asp-for="@Model.restaurantInfo.PostalCode" /></p>
+
+        <input type="submit" value="Update" />
+
+        <br /><br /> <br /><br />
+
+    </form>
+</div>

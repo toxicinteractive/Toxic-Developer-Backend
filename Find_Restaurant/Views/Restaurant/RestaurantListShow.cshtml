@@ -1,0 +1,28 @@
+﻿
+
+@model Find_Restaurant.ViewModels.RestaurantsViewModel
+
+    <div class="card" id="welcome">
+        <h1> List Of Restaurants:  </h1>
+    </div>
+    <br />
+    <div>
+
+        @foreach (var restShows in Model.RestaurantList)
+        {
+            <div class="card alert-primary" id="welcome">
+                <h3>Restaurant  Name : @restShows.Name </h3>
+                <p>City: @restShows.City</p>
+                <p>OpeningHours: @restShows.OpeningHours</p>
+                
+                <br />
+
+                <h3><a asp-controller="Restaurant" asp-action="EditRestaurant" asp-route-id="@restShows.RestaurantId"> Edit Restaurant Info</a></h3>
+
+             
+            </div>
+            <br />
+        }
+
+
+    </div>

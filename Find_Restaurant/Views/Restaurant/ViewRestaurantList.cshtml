@@ -1,0 +1,32 @@
+﻿@model Find_Restaurant.ViewModels.RestaurantsViewModel
+
+<form asp-controller="Restaurant" asp-action="ViewRestaurantList" method="post" id="search">
+    <label></label>
+    <input type="text" asp-for="@Model.SearchValue" />
+    <input type="submit" value="Search" />
+
+
+    <select asp-for="@Model.restaurantInfo.DishTypeId">
+        @foreach (var category in Model.DishCategoryList)
+        {
+
+            <option value="@category.DishTypeId">@category.DishName</option>
+
+        }
+    </select>
+</form>
+
+<div>
+
+
+    @foreach (var look in Model.RestaurantList)
+    {
+        <a asp-controller="Restaurant" asp-action="ViewRestaurant" asp-route-id="@look.RestaurantId">@look.Name</a>
+
+        <p>@look.OpeningHours</p>
+        <p>@look.City</p>
+        <p> @look.DishType.DishName </p>
+
+    }
+
+</div>
