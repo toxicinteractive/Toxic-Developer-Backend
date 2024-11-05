@@ -31,3 +31,6 @@ C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\obj\Debug
 C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\obj\Debug\net6.0\RestaurantFinder.pdb
 C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\obj\Debug\net6.0\RestaurantFinder.genruntimeconfig.cache
 C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\obj\Debug\net6.0\ref\RestaurantFinder.dll
+C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\pette\code\private\github\toxic-backend-test\RestaurantFinder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
