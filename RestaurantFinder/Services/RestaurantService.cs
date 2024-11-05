@@ -33,5 +33,14 @@ namespace RestaurantFinder.Services
             return restaurant;
 
         }
+
+        public bool ValidateRestaurantValues(Restaurant restaurant)
+        {
+            if (string.IsNullOrEmpty(restaurant.Name) ||
+                string.IsNullOrEmpty(restaurant.Food) ||
+                string.IsNullOrEmpty(restaurant.Address) ||
+                string.IsNullOrEmpty(restaurant.openingHours)) return false;
+            return true;
+        }
     }
 }
