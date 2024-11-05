@@ -1,3 +1,16 @@
+## Estimated Time
+Project setup - 1.5h
+* Create a project using .net core web api template
+* Implement folder strucutre
+* Define a restaurant model with given properties
+* Register database context, in-memory database, from Entity Framework
+
+Implement backend logic - 2.5
+* Create controllers to handle api requests, get all and add new restaurant
+* Implement repository for a clean code and manage data access
+* Implement controller and service that generates a random restaurant from the db
+* Test with swagger
+
 # Pre-interview assignment
 
 
