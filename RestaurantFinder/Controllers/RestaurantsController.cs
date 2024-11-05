@@ -30,5 +30,18 @@ namespace RestaurantFinder.Controllers
             var restaurants = await _restaurantRepository.GetAllRestaurants();
             return Ok(restaurants);
         }
+
+        [HttpGet("random")]
+        public async Task<ActionResult<Restaurant>> GetRandomRestaurant()
+        {
+            var restaurants = await _restaurantRepository.GetAllRestaurants();
+            if (!restaurants.Any()) return NotFound("No restaurants was found, please create some!");
+
+            var random = new Random();
+
+            var restaurant = restaurants.ElementAt(random.Next(restaurants.Count()));
+
+            return Ok(restaurant);
+        }
     }
 }
