@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using RestaurantFinder.Data;
 using RestaurantFinder.Repositories;
 using RestaurantFinder.Repositories.Interfaces;
+using RestaurantFinder.Services;
+using RestaurantFinder.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("RestaurantDb"));
 
 builder.Services.AddTransient<IRestaurantRepository, RestaurantRepository>();
+builder.Services.AddTransient<IRestaurantService, RestaurantService>();
 
 var app = builder.Build();
 

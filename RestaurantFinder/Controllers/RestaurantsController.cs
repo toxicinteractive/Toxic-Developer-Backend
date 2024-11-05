@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestaurantFinder.Repositories.Interfaces;
 using RestaurantFinder.Models;
+using RestaurantFinder.Services.Interfaces;
 
 namespace RestaurantFinder.Controllers
 {
@@ -11,9 +12,11 @@ namespace RestaurantFinder.Controllers
     public class RestaurantsController : ControllerBase
     {
         private readonly IRestaurantRepository _restaurantRepository;
-        public RestaurantsController(IRestaurantRepository restaurantRepository)
+        private readonly IRestaurantService _restaurantService;
+        public RestaurantsController(IRestaurantRepository restaurantRepository, IRestaurantService restaurantService)
         {
             _restaurantRepository = restaurantRepository;
+            _restaurantService = restaurantService;
         }
 
         [HttpPost]
@@ -34,14 +37,11 @@ namespace RestaurantFinder.Controllers
         [HttpGet("random")]
         public async Task<ActionResult<Restaurant>> GetRandomRestaurant()
         {
-            var restaurants = await _restaurantRepository.GetAllRestaurants();
-            if (!restaurants.Any()) return NotFound("No restaurants was found, please create some!");
 
-            var random = new Random();
+            var randomRestaurant = await _restaurantService.GetRandomRestaurant();
+            if (randomRestaurant == null) return NotFound("No restaurants was found, please create some!");
 
-            var restaurant = restaurants.ElementAt(random.Next(restaurants.Count()));
-
-            return Ok(restaurant);
+            return Ok(randomRestaurant);
         }
     }
 }
