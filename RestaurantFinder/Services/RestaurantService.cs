@@ -7,6 +7,7 @@ namespace RestaurantFinder.Services
     public class RestaurantService : IRestaurantService
     {
         private readonly IRestaurantRepository _restaurantRepository;
+        public static int? _lastSelectedRestuarantId = null;
 
         public RestaurantService(IRestaurantRepository restaurantRepository)
         {
@@ -19,8 +20,16 @@ namespace RestaurantFinder.Services
 
             var random = new Random();
 
-            var index = random.Next(restaurants.Count());
-            var restaurant = restaurants.ElementAt(index);
+            Restaurant restaurant;
+
+            do
+            {
+                var index = random.Next(restaurants.Count());
+                restaurant = restaurants.ElementAt(index);
+            } while (restaurant.Id == _lastSelectedRestuarantId);
+
+            _lastSelectedRestuarantId = restaurant.Id;
+        
             return restaurant;
 
         }
