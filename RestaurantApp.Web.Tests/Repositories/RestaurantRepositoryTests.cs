@@ -16,13 +16,12 @@ namespace RestaurantApp.Web.Tests.Repositories
         {
             // Arrange
             var restaurant = new Restaurant();
-            var repository = new RestaurantRepository();
 
             // Act
-            repository.Create(restaurant);
+            RestaurantRepository.Create(restaurant);
 
             // Assert
-            var restaurants = repository.GetAll();
+            var restaurants = RestaurantRepository.GetAll();
             restaurants.Count().Should().Be(1);
         }
 
@@ -31,11 +30,10 @@ namespace RestaurantApp.Web.Tests.Repositories
         {
             // Arrange
             var restaurant = new Restaurant() { Id = 1};
-            var repository = new RestaurantRepository();
-            repository.Create(restaurant);
+            RestaurantRepository.Create(restaurant);
 
             // Act
-            var result = repository.GetById(1);
+            var result = RestaurantRepository.GetById(1);
 
             // Assert
             result.Id.Should().Be(1);

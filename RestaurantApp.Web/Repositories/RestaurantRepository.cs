@@ -2,12 +2,12 @@
 
 namespace RestaurantApp.Web.Repositories
 {
-    public class RestaurantRepository
+    public static class RestaurantRepository
     {
-        private List<Restaurant> _restaurants = [];
+        private static List<Restaurant> _restaurants = [];
         
-        public void Create(Restaurant restaurant) => _restaurants.Add(restaurant);
-        public IEnumerable<Restaurant> GetAll() => _restaurants;
-        public Restaurant GetById(int id) => _restaurants.Single(restaurant => restaurant.Id == id);
+        public static void Create(Restaurant restaurant) => _restaurants.Add(restaurant);
+        public static IEnumerable<Restaurant> GetAll() => _restaurants.AsEnumerable();
+        public static Restaurant GetById(int id) => _restaurants.Single(restaurant => restaurant.Id == id);
     }
 }

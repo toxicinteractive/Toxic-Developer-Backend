@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using RestaurantApp.Web.Entities;
 using RestaurantApp.Web.Models;
+using RestaurantApp.Web.Services;
 using System.Diagnostics;
 
 namespace RestaurantApp.Web.Controllers
@@ -15,7 +17,21 @@ namespace RestaurantApp.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var vm = new RestaurantViewModel();
+
+            vm.Restaurants = RestaurantService.GetAll();
+
+            return View(vm);
+        }
+
+        [HttpPost]
+        public IActionResult CreateRestaurant(string name, string foodType, string location, string openingHours)
+        {
+            var restaurant = new Restaurant { Name = name, FoodType = foodType, Location = location, OpeningHours = openingHours };
+
+            RestaurantService.Create(restaurant);
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()
