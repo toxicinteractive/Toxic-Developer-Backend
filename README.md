@@ -13,3 +13,9 @@ We love lunch, but it's not easy to find the right restaurant each day. A simple
 * When you're done, write a little bit about what your next steps would be if you had more time
 
 When you're done, ideally within a week of you seeing this, send us a pull request with your work in it to this repository! Bonus points if your commits are descriptive. =)
+
+
+
+Johannes Notes:
+
+- Time estimate: 4-5h.
