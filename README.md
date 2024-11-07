@@ -19,3 +19,5 @@ When you're done, ideally within a week of you seeing this, send us a pull reque
 Johannes Notes:
 
 - Time estimate: 4-5h.
+
+- How to run project: In main folder, enter "RestaurantApp.Web" Folder. Start solution and run the project with IIS Express (there may be a possibility that RestaurantApp.Web need to be set as "Startup Project").
