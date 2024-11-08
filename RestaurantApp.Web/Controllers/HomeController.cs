@@ -18,8 +18,15 @@ namespace RestaurantApp.Web.Controllers
         public IActionResult Index()
         {
             var vm = new RestaurantViewModel();
+            var restaurants = RestaurantService.GetAll();
 
-            vm.Restaurants = RestaurantService.GetAll();
+            vm.Restaurants = restaurants;
+
+            // Set the restaurant object in Viewmodel prop "Restaurant of the day".
+            if (vm.Restaurants.Count() != 0)
+            {
+                vm.RestaurantOfTheDay = restaurants.SingleOrDefault(r => r.IsRestaurantOfTheDay == true);
+            }
 
             return View(vm);
         }
@@ -30,6 +37,14 @@ namespace RestaurantApp.Web.Controllers
             var restaurant = new Restaurant { Name = name, FoodType = foodType, Location = location, OpeningHours = openingHours };
 
             RestaurantService.Create(restaurant);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult SetDailyRestaurant()
+        {
+            RestaurantService.GetAndSetRestaurantOfTheDay();
 
             return RedirectToAction("Index");
         }

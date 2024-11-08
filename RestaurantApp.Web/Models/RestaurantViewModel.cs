@@ -8,7 +8,7 @@ namespace RestaurantApp.Web.Models
         public string FoodType { get; set; }
         public string Location { get; set; }
         public string OpeningHours { get; set; }
-        public IEnumerable<Restaurant> Restaurants {get; set;}
         public Restaurant RestaurantOfTheDay { get; set; }
+        public IEnumerable<Restaurant> Restaurants {get; set;}
     }
 }
