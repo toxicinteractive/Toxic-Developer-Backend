@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\RestaurantAPI\\bin",
+    "\\RestaurantAPI\\bin\\Debug",
+    "\\RestaurantAPI\\bin\\Release",
+    "\\RestaurantAPI\\Controllers",
+    "\\RestaurantAPI\\obj",
+    "\\RestaurantAPI\\obj\\Debug",
+    "\\RestaurantAPI\\obj\\Release",
+    "\\RestaurantAPI\\Properties"
+  ],
+  "PreviewInSolutionExplorer": false
+}

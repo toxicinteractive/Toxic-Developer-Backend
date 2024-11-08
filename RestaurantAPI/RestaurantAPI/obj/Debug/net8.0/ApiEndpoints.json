@@ -1,0 +1,139 @@
+[
+  {
+    "ContainingType": "RestaurantAPI.Controller.RestaurantController",
+    "Method": "AddOpenHours",
+    "RelativePath": "api/Restaurant/AddOpenHours",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurantid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dayNumber",
+        "Type": "System.DayOfWeek[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "open",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "close",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestaurantAPI.Models.OpenHoursItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestaurantAPI.Controller.RestaurantController",
+    "Method": "AddRestaurant",
+    "RelativePath": "api/Restaurant/AddRestaurant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "food",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dayNumber",
+        "Type": "System.DayOfWeek[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "open",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "close",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestaurantAPI.Models.RestaurantItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestaurantAPI.Controller.RestaurantController",
+    "Method": "GetRestaurantOfTheDay",
+    "RelativePath": "api/Restaurant/GetRestaurantOfTheDay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "RestaurantAPI.Models.RestaurantItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestaurantAPI.Controller.RestaurantController",
+    "Method": "GetRestaurants",
+    "RelativePath": "api/Restaurant/GetRestaurants",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestaurantAPI.Models.RestaurantItem, RestaurantAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
