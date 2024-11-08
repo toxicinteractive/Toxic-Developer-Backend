@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\models\\restaurantcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:models\\restaurantcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\models\\restaurantitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:models\\restaurantitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|c:\\users\\floen\\source\\repos\\working-at-toxic-backend\\restaurantapi\\restaurantapi\\restaurantapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{86517437-21F3-47C8-B0C0-58F55EF7DD8E}|RestaurantAPI.csproj|solutionrelative:restaurantapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-08T11:43:13.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-08T11:43:09.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RestaurantAPI.http",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.http",
+              "RelativeDocumentMoniker": "RestaurantAPI.http",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.http",
+              "RelativeToolTip": "RestaurantAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-08T11:40:12.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:20:22.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RestaurantContext.cs",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Models\\RestaurantContext.cs",
+              "RelativeDocumentMoniker": "Models\\RestaurantContext.cs",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Models\\RestaurantContext.cs",
+              "RelativeToolTip": "Models\\RestaurantContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:19:39.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RestaurantItem.cs",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Models\\RestaurantItem.cs",
+              "RelativeDocumentMoniker": "Models\\RestaurantItem.cs",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Models\\RestaurantItem.cs",
+              "RelativeToolTip": "Models\\RestaurantItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:18:58.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RestaurantController.cs",
+              "ToolTip": "C:\\Users\\floen\\source\\repos\\Working-at-Toxic-Backend\\RestaurantAPI\\RestaurantAPI\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Controllers\\RestaurantController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwGgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:17:45.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
