@@ -1,0 +1,53 @@
+﻿@model RestaurantViewModel
+@{
+
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Restaurant APP</h1>
+    <div class="text-center mt-3">
+        <form asp-controller="Home" asp-action="CreateRestaurant" method="post">
+            <input type="text" name="name" value="" placeholder="Type Restaurant Name" />
+            <input type="text" name="foodType" value="" placeholder="Type Food Type" />
+            <input type="text" name="location" value="" placeholder="Type Location" />
+            <input type="text" name="openingHours" value="" placeholder="Type Opening Hours" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <div class="d-flex gap-5 justify-content-center mt-5">
+        <div>
+            <h2>Restaurants</h2>
+            @if (Model.Restaurants != null && Model.Restaurants.Count() != 0)
+            {
+                <ul style="list-style-type: none;
+                padding: 0;
+                margin: 0;">
+                    @foreach (var restaurant in Model.Restaurants)
+                    {
+                        <li>@restaurant.Name</li>
+                        <li>@restaurant.FoodType</li>
+                        <li>@restaurant.Location</li>
+                        <li style="margin-bottom: 20px;">@restaurant.OpeningHours</li>
+                    }
+                </ul>
+            }
+        </div>
+        <div>
+            <h2>Restaurant Of The Day</h2>
+            @if (Model.Restaurants != null && Model.Restaurants.Count() != 0)
+            {
+                <form asp-controller="Home" asp-action="SetDailyRestaurant" method="post">
+                    <input type="submit" value="Submit" />
+                </form>
+                @if (Model.RestaurantOfTheDay != null)
+                {
+                    <h4>@Model.RestaurantOfTheDay.Name</h4>
+                    <h4>@Model.RestaurantOfTheDay.FoodType</h4>
+                    <h4>@Model.RestaurantOfTheDay.Location</h4>
+                    <h4>@Model.RestaurantOfTheDay.OpeningHours</h4>
+                }
+            }
+        </div>
+    </div>
+</div>
