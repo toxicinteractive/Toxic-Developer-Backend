@@ -20,7 +20,7 @@ namespace RestaurantFinder.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Restaurant>> CreateRestaurant(Restaurant restaurant)
+        public async Task<ActionResult> CreateRestaurant(Restaurant restaurant)
         {
             var isRestaurantValuesValid = _restaurantService.ValidateRestaurantValues(restaurant);
             if (!isRestaurantValuesValid) return BadRequest("Please enter empty fields");

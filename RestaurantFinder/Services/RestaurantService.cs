@@ -18,6 +18,8 @@ namespace RestaurantFinder.Services
             var restaurants = await _restaurantRepository.GetAllRestaurants();
             if (!restaurants.Any()) return null;
 
+            if (restaurants.Count() == 1) return restaurants.First();
+
             var random = new Random();
 
             Restaurant restaurant;
@@ -39,7 +41,7 @@ namespace RestaurantFinder.Services
             if (string.IsNullOrEmpty(restaurant.Name) ||
                 string.IsNullOrEmpty(restaurant.Food) ||
                 string.IsNullOrEmpty(restaurant.Address) ||
-                string.IsNullOrEmpty(restaurant.openingHours)) return false;
+                string.IsNullOrEmpty(restaurant.OpeningHours)) return false;
             return true;
         }
     }
